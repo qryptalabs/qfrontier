@@ -1,0 +1,11 @@
+import {ROYAL_PUBLIC_BRIDGE_ROUTE,ROYAL_BRIDGE_TO_PALACE,ROYAL_PALACE_AVENUE} from './royal-urban-plan.ts';
+import {SHOP_SITES,type ShopCity} from './city-shop-sites.ts';
+import {ROYAL_REGIONAL_ROUTES} from './royal-world-surface.ts';
+import {ROYAL_PORT_OFFSET} from './royal-proportions.ts';
+import type {RoyalPose} from './royal-navigation.ts';
+/** One fixed, reversible road. No client destination coordinates or field shortcuts. */
+export function shopTradeRoad(from:ShopCity):{x:number;z:number}[]{const b=SHOP_SITES['paso-del-norte'];const road=[...ROYAL_PUBLIC_BRIDGE_ROUTE.slice(0,-ROYAL_BRIDGE_TO_PALACE.length+1),...ROYAL_BRIDGE_TO_PALACE.slice(0,ROYAL_BRIDGE_TO_PALACE.findIndex(p=>p.x===170&&p.z===-30)+1).map(({x,z})=>({x,z})),...ROYAL_PALACE_AVENUE.slice(0,ROYAL_PALACE_AVENUE.findIndex(p=>p.x===170&&p.z===-30)+1).reverse().map(({x,z})=>({x,z})),...ROYAL_REGIONAL_ROUTES[1].points.map(([x,z])=>({x,z:z-ROYAL_PORT_OFFSET})),{x:b.x-39,z:3864-ROYAL_PORT_OFFSET},{x:b.x-39,z:b.z+14}];return from==='corona-del-alba'?road:[...road].reverse();}
+let segments:{a:{x:number;z:number};b:{x:number;z:number};minX:number;maxX:number;minZ:number;maxZ:number}[]|undefined;
+export function shopRoadNear(x:number,z:number,width=5){if(x< -455-width||x>2490+width||z< -60-width||z>3760+width)return false;if(!segments){const road=shopTradeRoad('corona-del-alba');segments=road.slice(1).map((b,i)=>({a:road[i],b,minX:Math.min(road[i].x,b.x),maxX:Math.max(road[i].x,b.x),minZ:Math.min(road[i].z,b.z),maxZ:Math.max(road[i].z,b.z)}));}for(const s of segments){if(x<s.minX-width||x>s.maxX+width||z<s.minZ-width||z>s.maxZ+width)continue;const dx=s.b.x-s.a.x,dz=s.b.z-s.a.z,t=Math.max(0,Math.min(1,((x-s.a.x)*dx+(z-s.a.z)*dz)/(dx*dx+dz*dz||1)));if(Math.hypot(x-s.a.x-dx*t,z-s.a.z-dz*t)<=width)return true;}return false;}
+
+export function shopLocalPath(city:ShopCity,target:'counter'|'pickup',floor:(x:number,z:number)=>number|null):RoyalPose[]{const s=SHOP_SITES[city];return(target==='counter'?[{x:s.x-39,z:s.z+14},{x:s.x-39,z:s.z+20},{x:s.x,z:s.z+20},{x:s.x,z:s.z+13},{x:s.x,z:s.z+5},{x:s.x,z:s.z-4.3}]:[{x:s.x,z:s.z-4.3},{x:s.x,z:s.z+5},{x:s.x,z:s.z+20},{x:s.x-39,z:s.z+20},{x:s.x-39,z:s.z+14}]).map(p=>({...p,y:floor(p.x,p.z)??s.y}));}

@@ -1,0 +1,22 @@
+QFrontier — Sound stage 1
+
+Licensed CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+
+Kenney, Impact Sounds (1.0), https://kenney.nl/assets/impact-sounds
+  Footsteps on grass, concrete (stone), wood, carpet, snow; wood/plank impacts.
+Kenney, RPG Audio, https://kenney.nl/assets/rpg-audio
+  Chop, cloth, creak, coins.
+RandomMind, Medieval: Exploration, https://opengameart.org/content/medieval-exploration
+  Music, supplied as Exploration_0.mp3.
+TinyWorlds, Forest Ambience, https://opengameart.org/content/forest-ambience
+  20-second edited excerpt.
+jasinski (submitted by qubodup), Beach Ocean Waves, https://opengameart.org/content/beach-ocean-waves
+  wave_01_cc0-18363__jasinski__alkaibeach.flac; edited waves and splash.
+
+All downloaded sources verified as CC0 on 2026-10-19.
+Edits by QFrontier: normalization, compression, cuts, fades, mono downmix and hoof foley pitch adaptation.
+Original QFrontier: saw friction synthesis, filtered wind, UI/level-up musical cues and procedural room impulse.
+No game assets or recordings are fetched from third parties during play.
+
+Shop dialogue (shop-welcome.mp3, shop-thanks.mp3): original Spanish QFrontier text; locally synthesized with the installed Microsoft Raul es-MX system voice on 2026-10-19. These are generated dialogue recordings, separate from the downloaded CC0 sound pack above.
+Northern shop dialogue (shop-north-welcome.mp3): original Spanish QFrontier text, synthesized locally with the installed Microsoft Sabina es-MX voice on 2026-10-19; separate from downloaded CC0 assets.

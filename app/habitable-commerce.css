@@ -1,0 +1,67 @@
+.hc-panel .h-card-body{display:grid;gap:15px;min-width:0}
+.hc-summary{font-size:12px;line-height:1.8;color:#b8c9a5;margin:0}
+.hc-balance{border:1px solid #879c6255;border-radius:7px;background:#132c1d88;padding:12px}
+.hc-balance h3,.hc-history h3{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:#dcd8af;margin:0 0 12px}
+.hc-balance-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 8px}
+.hc-balance-grid>span{font-size:10px;line-height:1.75;color:#aabe94;min-width:0}
+.hc-balance-grid strong{display:block;font-family:var(--m-serif,Georgia,serif);font-size:24px;line-height:1.5;font-weight:400;color:#e8d9ad;font-variant-numeric:tabular-nums}
+.hc-balance-grid strong>small{font-size:12px;color:#b8c69f}
+.hc-balance-grid>.hc-earned{border:1px solid #b09a6044;border-radius:5px;background:#72612d22;padding:6px 7px;margin:-6px -3px}
+.hc-balance>p{font-size:10px;line-height:1.8;color:#a7ba92;margin:11px 0 0}
+.hc-balance>.hc-wallet{display:flex;align-items:center;gap:6px;border-top:1px solid #8c9b6033;padding-top:10px;color:#bac99f}
+.hc-wallet>strong{margin-left:auto;white-space:nowrap;font-size:13px;font-weight:500;color:#e1d4a9;font-variant-numeric:tabular-nums}
+.hc-offer{display:grid;gap:12px;border:1px solid #b19d6466;border-radius:8px;background:linear-gradient(145deg,#625b302c,#11291b);padding:13px;min-width:0}
+.hc-offer-heading{display:flex;align-items:center;gap:9px;color:#c7b67d}
+.hc-offer-heading>svg{flex-shrink:0}
+.hc-offer-heading h3{font-family:var(--m-serif,Georgia,serif);font-size:25px;font-weight:400;line-height:1.3;color:#eddaab;margin:0}
+.hc-offer-heading p{font-size:10px;line-height:1.8;color:#afbf98;margin:4px 0 0}
+.hc-terms{display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap;border:1px solid #879b5c44;border-radius:5px;background:#10271a77;padding:11px;color:#d2d5ae;font-size:12px}
+.hc-terms>span{display:flex;align-items:center;gap:6px}
+.hc-terms>svg{color:#bdbd83}
+.hc-terms>strong{font-size:20px;font-weight:400;color:#edce89;font-family:var(--m-serif,Georgia,serif);white-space:nowrap}
+.hc-offer>p{font-size:10px;line-height:1.8;color:#b3c59e;margin:0}
+.hc-source-label{font-size:12px;color:#c4d1af;gap:7px;min-width:0}
+.hc-source-label select{width:100%;min-width:0;min-height:41px;background:#10281a;border-color:#83995f66;color:#e4dbb5;font-size:11px}
+.hc-stock{display:flex;align-items:flex-start;gap:7px;font-size:11px;line-height:1.8;color:#b5c79d}
+.hc-stock>svg{flex-shrink:0;color:#c8b67a;margin-top:3px}
+.hc-stock strong{font-weight:500;color:#e5d9af;font-variant-numeric:tabular-nums}
+.hc-access-actions{display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap}
+.hc-text-button{display:flex;align-items:center;gap:5px;border:0;border-bottom:1px solid #b7a86c44;border-radius:3px;padding:6px 1px;background:transparent;color:#d2bd8b;font-size:10px;line-height:1.8;min-height:32px;text-align:left}
+.hc-text-button:hover{color:#f0dcaa;border-bottom-color:#cdb779}
+.hc-text-button:disabled{opacity:.45;cursor:not-allowed}
+.hc-note{display:flex;align-items:flex-start;gap:7px;font-size:10px;line-height:1.8;color:#afc397;margin:0}
+.hc-note>svg{flex-shrink:0;margin-top:3px;color:#b7bc86}
+.hc-empty{font-size:11px;line-height:1.8;color:#b5c59f;border:1px dashed #8a9d5e55;border-radius:6px;padding:12px}
+.hc-empty p{margin:0 0 12px}
+.hc-contract{border:1px solid #a69d6266;border-radius:8px;background:linear-gradient(145deg,#4c582c30,#142d1e);padding:13px;min-width:0}
+.hc-contract.paid{border-color:#9fb37388;background:#3a562d44}
+.hc-contract.closed{border-color:#a58c5f55;background:#3f3b2522}
+.hc-contract-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:7px;flex-wrap:wrap;font-size:11px;line-height:1.8;color:#dfd3a5}
+.hc-contract-heading>span{display:flex;align-items:center;gap:6px}
+.hc-contract-heading strong{font-weight:500}
+.hc-contract-heading>small{font-size:10px;color:#c8bc8d}
+.hc-contract-heading>b{font-size:15px;font-weight:500;color:#d6dfad;font-variant-numeric:tabular-nums}
+.hc-contract h4{font-family:var(--m-serif,Georgia,serif);font-size:25px;font-weight:400;color:#ead8aa;line-height:1.3;margin:12px 0}
+.hc-stage-time{display:flex;align-items:center;gap:6px;color:#bdc8a2;font-size:11px;line-height:1.8;font-variant-numeric:tabular-nums;margin-bottom:9px}
+.hc-journey{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.hc-journey>li{display:grid;justify-items:center;gap:4px;text-align:center;font-size:9px;line-height:1.6;color:#94aa83;min-width:0}
+.hc-journey>li>span{display:flex;align-items:center;justify-content:center;height:19px;width:19px;border:1px solid #8a9d5f66;border-radius:50%;background:#162c1d;font-size:9px}
+.hc-journey>li.current{color:#ecdbac}
+.hc-journey>li.current>span{border-color:#c9ab6c;background:#7c683244;color:#f4dda1}
+.hc-journey>li.done{color:#c3d3a7}
+.hc-journey>li.done>span{border-color:#9ab16877;background:#456b3444}
+.hc-contract-facts{display:grid;gap:8px;border-top:1px solid #8a9a5e33;padding-top:12px;margin:12px 0 0;font-size:11px;line-height:1.8}
+.hc-contract-facts>div{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;min-width:0}
+.hc-contract-facts dt{display:flex;align-items:center;gap:5px;color:#aabe95}
+.hc-contract-facts dd{color:#dfd4a9;text-align:right;margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.hc-contract>p{font-size:10px;line-height:1.8;color:#b2c59d;margin:11px 0 0}
+.hc-contract>.hc-payment{display:flex;align-items:flex-start;gap:6px;color:#cbdab2}
+.hc-payment>svg{flex-shrink:0;margin-top:3px}
+.hc-contract-actions{display:grid;gap:9px;margin-top:13px}
+.hc-history{border-top:1px solid #85995a44;padding-top:14px}
+.hc-history>div{display:flex;align-items:flex-start;justify-content:space-between;gap:9px;border-bottom:1px solid #83985a33;padding:9px 0;font-size:11px;line-height:1.8;color:#c9d0aa}
+.hc-history>div>span{flex:1;min-width:0}
+.hc-history small{display:block;color:#9fb88d;font-size:10px}
+.hc-history strong{font-weight:500;color:#dfd4a9;white-space:nowrap;font-variant-numeric:tabular-nums}
+.h-tabs.h-tabs-six{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.hc-offer,.hc-contract,.hc-balance{padding:11px}.hc-terms{font-size:11px}.hc-offer-heading h3,.hc-contract h4{font-size:24px}.hc-wallet>strong{font-size:12px}}

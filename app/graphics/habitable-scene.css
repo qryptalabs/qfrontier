@@ -1,0 +1,57 @@
+.h-district-scene{position:relative;width:100%;height:100%;min-height:380px;overflow:hidden;background:#17372a;color:#eddfbc;isolation:isolate}
+.h-district-canvas{position:absolute;inset:0}
+.h-district-canvas canvas:focus-visible{outline:2px solid #e6c588!important;outline-offset:-3px}
+.h-district-scene button{font:inherit;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer;border:1px solid #9cae7977;border-radius:8px;background:#122b22ee;color:#f0e3bf;box-shadow:inset 0 1px #f8e8b514;touch-action:manipulation}
+.h-district-scene button:hover:not(:disabled){background:#3a5131;border-color:#debf80}
+.h-district-scene button:focus-visible{outline:2px solid #f3cd83;outline-offset:3px}
+.h-district-scene button:disabled{opacity:.45;cursor:not-allowed}
+.h-district-loading{position:absolute;inset:0;display:grid;place-items:center;background:#16372bcc;color:#eadcba;z-index:5}
+.h-district-loading>span{display:flex;align-items:center;gap:10px;padding:16px}
+.h-district-error{position:absolute;inset:20px;z-index:10;padding:18px;background:#25362ef5;color:#f6e4bd;border:1px solid #bb956a77;border-radius:12px;line-height:1.65;overflow:auto}
+.h-district-error button{display:flex;padding:0 14px;margin-top:12px}
+.h-district-cameras{position:absolute;z-index:5;top:88px;left:12px;right:12px;display:flex;gap:4px;flex-wrap:wrap;pointer-events:none}
+.h-district-cameras button{pointer-events:auto;min-height:44px;padding:8px 11px;font-size:11px;font-weight:600;background:#10271ff0;backdrop-filter:blur(8px)}
+.h-district-cameras button[aria-pressed=true]{background:linear-gradient(#687b4b,#425c39);border-color:#ddbe80;color:#fff0ca;box-shadow:0 2px 9px #07180b44,inset 0 1px #ffecbf22}
+.h-district-fullscreen{position:absolute;right:12px;top:12px;z-index:7;padding:8px 11px;font-size:11px!important;backdrop-filter:blur(8px)}
+.h-district-keyboard-hint{position:absolute;left:14px;bottom:68px;right:14px;z-index:3;color:#eddfb7;text-shadow:0 2px 5px #000;font-size:10px;line-height:1.65;pointer-events:none}
+.h-district-keyboard-hint>span{font-size:13px;letter-spacing:2px}
+.h-district-tools{position:absolute;right:12px;bottom:12px;z-index:6;display:flex;gap:5px;padding:5px;border-radius:12px;background:#0c2119cc;backdrop-filter:blur(8px)}
+.h-district-tools button{font-size:12px;padding:0 10px;flex-shrink:0}
+.h-district-tools button>span{font-size:11px}
+.h-district-navigation-note{position:absolute;z-index:4;top:144px;left:14px;max-width:calc(100% - 28px);margin:0;font-size:11px;line-height:1.5;padding:7px 10px;border:1px solid #c6af6a66;border-radius:6px;background:#14281fe8;color:#f2dfaf;pointer-events:none}
+.h-district-journey{position:absolute;top:145px;left:12px;z-index:6;max-width:calc(100% - 24px);display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px;border:1px solid #b4b78066;border-radius:9px;background:#122b22ed;color:#f0dfb3;box-shadow:0 3px 14px #07190c44}
+.h-district-journey>span{display:flex;align-items:center;flex-wrap:wrap;gap:7px;font-size:11px}
+.h-district-journey small{font-size:10px;color:#c1cdb1}
+.h-district-journey button{padding:0 10px;font-size:10px;min-height:44px}
+.h-district-scene--expanded .h-district-journey{top:124px}
+.h-district-touch-controls{display:none;position:absolute;inset:0;pointer-events:none;z-index:4}
+.h-district-joystick,.h-district-look{position:absolute;pointer-events:auto;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;border:1px solid #d7d4a273;background:radial-gradient(circle,#273f2c55,#0d231b88);color:#f4e4b7;box-shadow:inset 0 0 15px #07180b66,0 3px 12px #06160b44}
+.h-district-joystick{width:124px;height:124px;left:max(16px,env(safe-area-inset-left));bottom:max(28px,env(safe-area-inset-bottom));border-radius:50%}
+.h-district-joystick>svg{opacity:.45;pointer-events:none}
+.h-district-thumb{position:absolute;display:block;width:44px;height:44px;border:1px solid #e4d393ad;border-radius:50%;background:radial-gradient(circle at 40% 30%,#819b60ed,#425f41e8);box-shadow:0 3px 10px #06160b99;pointer-events:none}
+.h-district-pad-label{position:absolute;bottom:-20px;left:0;right:0;text-align:center;font-size:10px;color:#e8ddbb;text-shadow:0 2px 3px #000;pointer-events:none}
+.h-district-look{width:102px;height:102px;right:max(20px,env(safe-area-inset-right));bottom:max(94px,calc(env(safe-area-inset-bottom) + 72px));border-radius:50%;flex-direction:column;gap:7px}
+.h-district-look>span{font-size:10px;pointer-events:none}
+.h-district-control-disabled{opacity:.42}
+.h-district-immersive-note{position:absolute;z-index:4;top:14px;left:14px;font-size:10px;padding:9px;background:#13281fd9;border:1px solid #9cac7555;border-radius:6px;pointer-events:none}
+.h-district-scene:fullscreen,.h-district-scene.h-district-scene--immersive{width:100vw!important;height:100dvh!important;min-height:0!important;max-height:none!important;background:#17372a}
+.h-district-scene.h-district-scene--immersive{position:fixed;inset:0;z-index:2147483000}
+.h-district-scene--expanded .h-district-fullscreen{top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
+.h-district-scene--expanded .h-district-cameras{top:max(70px,calc(env(safe-area-inset-top) + 58px));left:max(12px,env(safe-area-inset-left))}
+.h-district-scene--expanded .h-district-tools{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}
+@media(pointer:coarse),(max-width:760px){
+  .h-district-touch-controls{display:block}
+  .h-district-keyboard-hint{display:none}
+  .h-district-cameras{gap:3px;top:86px}
+  .h-district-cameras button{padding:7px 8px;gap:5px;font-size:10px;flex:1;max-width:145px}
+  .h-district-cameras button>svg{width:14px;height:14px;flex-shrink:0}
+  .h-district-fullscreen{padding:7px 10px}
+  .h-district-tools{display:grid;grid-template-columns:repeat(3,44px);right:10px;bottom:max(12px,env(safe-area-inset-bottom));gap:3px;padding:4px}
+  .h-district-tools button{padding:0 8px}
+  .h-district-tools button>span{display:none}
+  .h-district-scene[data-camera=aerial] .h-district-tools{max-width:calc(100% - 20px)}
+}
+@media(max-width:390px){.h-district-cameras{left:8px;right:8px}.h-district-cameras button{padding:6px 5px;gap:3px;font-size:9px}.h-district-fullscreen>span{display:none}.h-district-joystick{left:12px;width:112px;height:112px}.h-district-look{right:16px;width:92px;height:92px}.h-district-journey{top:148px;gap:6px}.h-district-journey>span{max-width:170px}}
+@media(max-width:340px){.h-district-joystick{left:10px;width:100px;height:100px}}
+@media (max-height:520px) and (orientation:landscape){.h-district-scene--expanded .h-district-cameras{top:max(12px,env(safe-area-inset-top));right:130px}.h-district-scene--expanded .h-district-immersive-note{display:none}.h-district-scene--expanded .h-district-joystick{bottom:max(20px,env(safe-area-inset-bottom))}.h-district-scene--expanded .h-district-look{bottom:77px}.h-district-scene--expanded .h-district-navigation-note{top:70px}.h-district-scene--expanded .h-district-journey{top:68px}}
+@media(prefers-reduced-motion:reduce){.h-district-scene *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

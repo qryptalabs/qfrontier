@@ -1,0 +1,46 @@
+.hr-panel .h-card-body{display:grid;gap:14px;min-width:0}
+.hr-summary{margin:0;color:#b8c8a7;font-size:12px;line-height:1.8}
+.hr-housing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.hr-housing>div{padding:11px 7px;border:1px solid #899c5c44;border-radius:6px;text-align:center;background:#163020}
+.hr-housing span{display:block;color:#afc39c;font-size:10px;line-height:1.6}
+.hr-housing strong{display:block;color:#ead9aa;font-family:var(--m-serif,Georgia,serif);font-size:29px;font-weight:400;line-height:1.4;font-variant-numeric:tabular-nums}
+.hr-note{display:flex;align-items:flex-start;gap:7px;color:#acbf99;font-size:11px;line-height:1.8;margin:0}
+.hr-note>svg{flex-shrink:0;color:#b9bf89;margin-top:3px}
+.hr-register{padding:13px;border:1px solid #bea16577;border-radius:7px;background:linear-gradient(145deg,#70633833,#16301e)}
+.hr-register h3{font-family:var(--m-serif,Georgia,serif);font-size:24px;font-weight:400;color:#efdbac;margin:0 0 7px}
+.hr-register p{font-size:12px;line-height:1.8;color:#b9c9a8;margin:0 0 13px}
+.hr-resident-list,.hr-house-list{display:grid;gap:12px}
+.hr-resident{border:1px solid #81985d55;border-radius:7px;padding:12px;background:#10291c77;min-width:0}
+.hr-resident.occupied{border-color:#b19b6155}
+.hr-resident-heading{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hr-portrait{display:flex;align-items:center;justify-content:center;width:38px;height:44px;border:1px solid #81975e66;border-radius:5px;background:linear-gradient(145deg,#60784466,#243f2a);color:#d5c389;flex-shrink:0}
+.hr-portrait>svg{width:21px;height:21px}
+.hr-resident-heading>div{flex:1;min-width:75px}
+.hr-resident-heading h3{font-size:14px;font-weight:500;color:#e5d9b2;line-height:1.6;overflow-wrap:anywhere;margin:0}
+.hr-resident-heading p{font-size:11px;line-height:1.65;color:#adbf9a;overflow-wrap:anywhere;margin:2px 0 0}
+.hr-status{font-size:9px;line-height:1.7;border:1px solid #8ca96755;border-radius:4px;padding:3px 5px;color:#c6d4ae;background:#55763822}
+.hr-status.busy{color:#dfc58d;border-color:#bc9a5e66;background:#725f3022}
+.hr-resident-home{display:flex;align-items:center;gap:5px;font-size:10px;line-height:1.8;color:#9db68f;margin:10px 0 11px}
+.hr-assignment{display:grid;gap:9px}
+.hr-assignment label{font-size:11px;line-height:1.7;color:#bfceab;gap:7px;min-width:0}
+.hr-assignment select{width:100%;min-width:0;min-height:40px;font-size:11px;background:#12291d;color:#e0dfbd;border-color:#8ca06666}
+.hr-resident-actions{display:flex;justify-content:space-between;gap:5px;flex-wrap:wrap;margin-top:10px}
+.hr-resident>.hr-note{margin-top:10px}
+.hr-text-button{display:flex;align-items:center;gap:5px;min-height:32px;border:0;border-bottom:1px solid #a4a26944;border-radius:3px;background:transparent;color:#cfbd8b;padding:4px 1px;text-align:left;font-size:10px;line-height:1.8}
+.hr-text-button:hover{border-bottom-color:#d0b679;color:#eed9a5}
+.hr-text-button:disabled{opacity:.45;cursor:not-allowed}
+.hr-section-heading{display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap;border-top:1px solid #879a5a44;padding-top:14px}
+.hr-section-heading h3{display:flex;align-items:center;gap:7px;font-family:var(--m-serif,Georgia,serif);font-size:24px;font-weight:400;color:#e6d8ad;margin:0}
+.hr-empty{border:1px dashed #85995d55;border-radius:6px;background:#16302088;padding:12px;color:#afc29c;font-size:12px;line-height:1.8}
+.hr-house{border:1px solid #84965d55;border-radius:7px;background:#132c1d88;padding:12px;min-width:0}
+.hr-house-heading{display:flex;align-items:center;gap:8px;color:#cdb982}
+.hr-house-heading>div{flex:1;min-width:0}
+.hr-house-heading strong{font-size:14px;font-weight:500;display:block;color:#e0d9b1}
+.hr-house-heading small{display:block;font-size:10px;line-height:1.7;color:#a8bf95;margin-top:3px}
+.hr-house-heading>span{font-size:13px;font-variant-numeric:tabular-nums;color:#e2d0a0}
+.hr-house>p{font-size:11px;color:#b1c69d;line-height:1.8;margin:10px 0}
+.hr-house-actions{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+.hr-house>.hr-note{font-size:10px;margin-bottom:0}
+.h-tabs.h-tabs-five{grid-template-columns:repeat(2,minmax(0,1fr))}
+.h-tabs-five>button:last-child{grid-column:1/-1}
+@media(max-width:600px){.hr-resident,.hr-house{padding:12px 10px}.hr-resident-heading{gap:7px}.hr-status{font-size:9px}.hr-housing{gap:6px}}

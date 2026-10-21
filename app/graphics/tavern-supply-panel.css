@@ -1,0 +1,4 @@
+.cs-panel.tv-panel{position:fixed;z-index:75;right:24px;top:5vh;bottom:5vh;width:min(680px,calc(100vw - 48px));margin:0;overflow:auto;overscroll-behavior:contain;box-sizing:border-box;box-shadow:0 20px 100px #000b}
+.tv-panel progress{width:100%;height:9px;accent-color:#d7bd7f}.tv-panel .cs-welcome>p{flex:1;min-width:150px}.tv-panel .cs-contract strong{display:inline}.tv-panel .cs-heading h3{font-size:30px}.tv-panel:focus{outline:none}.tv-panel :focus-visible{outline:2px solid #f0d791;outline-offset:3px}
+.rh-city:fullscreen .cs-panel.tv-panel{z-index:15;top:65px;bottom:95px}
+@media(max-width:600px){.cs-panel.tv-panel{right:10px;left:10px;top:10px;bottom:10px;width:auto;padding:16px}.tv-panel .cs-heading h3{font-size:26px}.tv-panel .cs-contract{padding:13px}.tv-panel .cs-contract button{width:100%;margin:5px 0}.rh-city:fullscreen .cs-panel.tv-panel{top:8px;bottom:8px;right:8px;left:8px;width:auto}}

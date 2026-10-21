@@ -1,0 +1,92 @@
+.g-view-projection {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #65765270;
+  border-radius: 7px;
+  background: #11261d;
+}
+.g-view-projection button { min-width: 38px; font: 600 12px Consolas, monospace; }
+.g-view-projection button[aria-pressed="true"] {
+  background: #556747;
+  border-color: #94a47580;
+  color: #fff2c5;
+  box-shadow: inset 0 1px 0 #d8dfac22;
+}
+.g-camera-tilt { display: flex; align-items: center; gap: 8px; color: #b5c4a5; font-size: 10px; }
+.g-camera-tilt input { width: 90px; accent-color: #d1b36d; cursor: pointer; }
+.g-camera-tilt output { min-width: 28px; font: 10px Consolas, monospace; color: #e1d5aa; }
+.g-camera-tilt input:focus-visible { outline: 2px solid #dfc282; outline-offset: 5px; }
+.g-living-zone {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(240px, 1fr);
+  gap: 18px 32px;
+  padding: 25px;
+  border: 1px solid #8c8a526b;
+  border-radius: 10px;
+  background: radial-gradient(ellipse at 0 0, #67744830, transparent 65%), #20372a;
+}
+.g-living-zone h3 { font: 29px Marcellus, Georgia, serif; color: #eee3bf; margin: 12px 0; line-height: 1.25; }
+.g-living-zone p { color: #b9c9ad; font-size: 12px; line-height: 1.85; margin: 0; }
+.g-living-zone-actions { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.g-living-zone-actions button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #8290647d;
+  border-radius: 7px;
+  background: #304831;
+  color: #d7d9ad;
+  text-align: left;
+  transition: background 160ms, border-color 160ms;
+}
+.g-living-zone-actions button:hover:not(:disabled) { background: #425938; border-color: #c2b77c; }
+.g-living-zone-actions button:disabled { opacity: .45; }
+.g-living-zone-actions button:focus-visible { outline: 2px solid #dfc282; outline-offset: 3px; }
+.g-living-zone-actions strong { display: block; font-size: 13px; font-weight: 500; color: #f3e7be; }
+.g-living-zone-actions small { display: block; font-size: 10px; margin-top: 5px; color: #bccaa7; }
+.g-living-zone-actions button > svg:last-child { margin-left: auto; }
+.g-living-zone .g-living-zone-note { grid-column: 1 / -1; font-size: 10px; color: #a7b89a; padding-top: 10px; border-top: 1px solid #87945c44; }
+@media (max-width: 920px) {
+  .g-living-zone { grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  .g-living-zone-actions { flex-direction: row; }
+  .g-living-zone-actions button { flex: 1; min-width: 0; padding: 13px 11px; }
+  .g-living-zone-actions button > svg:last-child { display: none; }
+}
+@media (max-width: 620px) {
+  .g-living-zone { padding: 17px; }
+  .g-living-zone h3 { font-size: 25px; }
+  .g-living-zone-actions { flex-direction: column; }
+  .g-camera-tilt { flex-basis: 100%; justify-content: center; padding-top: 7px; }
+  .g-camera-tilt input { width: 150px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .g-living-zone-actions button { transition: none; }
+}
+.g-settlements-world { grid-template-columns: minmax(0, 1fr); }
+.g-settlements-world .g-living-zone-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.g-settlements-world .g-living-zone-actions button { min-width: 0; }
+.g-settlements-world button[data-biome="ice"] { background: #314c4d; border-color: #88b1af88; }
+.g-settlements-world button[data-biome="desert"] { background: #55472f; border-color: #bc996488; }
+.g-settlements-world button[data-biome="tropical"] { background: #274d3e; border-color: #87aa6688; }
+.g-settlements-world button:hover:not(:disabled) { filter: brightness(1.12); }
+.g-settlement-life { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 16px 0; }
+.g-settlement-life > span { padding: 12px; background: #243e2d; border: 1px solid #70835a55; border-radius: 6px; font-size: 11px; color: #bacaaa; }
+.g-settlement-life strong { display: block; color: #eee3bf; margin-bottom: 5px; font-size: 17px; font-weight: 500; }
+.g-settlement-life + p { font-size: 11px; color: #a6b79d; line-height: 1.8; }
+.g-selected-settlement { grid-column: 1 / -1; border: 1px solid #61754b66; border-radius: 8px; padding: 21px; background: #1b3024; }
+.g-selected-settlement h3 { font: 28px Marcellus, Georgia, serif; color: #e8dfbc; margin: 10px 0 0; }
+@media (max-width: 920px) {
+  .g-settlements-world .g-living-zone-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .g-settlements-world .g-living-zone-actions { grid-template-columns: minmax(0, 1fr); }
+  .g-settlement-life { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .g-settlement-life > span { display: flex; align-items: center; gap: 10px; }
+  .g-settlement-life strong { margin: 0; }
+}
+.g-planet-hud::before{content:"";position:absolute;z-index:-1;inset:-35px -27px -55px;pointer-events:none;background:linear-gradient(transparent,#071b18c9)}
+.g-planet-hud>strong small,.g-planet-orbit{color:#d5e3d9}
+@media(max-width:620px){.g-planet-hud::before{inset:-28px -17px -49px}}

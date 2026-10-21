@@ -1,0 +1,442 @@
+{
+  "deployedVersion": "ae6a8054-94ad-486b-98fe-fd67c1c411f9",
+  "purpose": "Immutable public source hashes for the local synthetic scalability scenario; no realm data.",
+  "sourceFilesAndHashes": [
+    {
+      "path": "lib/auth/cloudflare-access.ts",
+      "sha256": "5a94a06ed34f7aaaf169d4e74a6985f37bed5bd0c40723e5b1da32e682414386"
+    },
+    {
+      "path": "lib/client/activity-notifications.ts",
+      "sha256": "6003b64c9cc408daabd1a8b38caa2d8fac9d6849ce3aef29b506873e79c1e2c4"
+    },
+    {
+      "path": "lib/client/level-notifications.ts",
+      "sha256": "92e26e02cf9e218d33fbf3e2fc2360887aeb9006cfde7fb4eea5a14e64c31444"
+    },
+    {
+      "path": "lib/client/navigation.ts",
+      "sha256": "728f0f83a2fb6ffa38a9ba943a60e28e914571016b70a8dcffc10a73649bc58c"
+    },
+    {
+      "path": "lib/client/stock-options.ts",
+      "sha256": "8eb346851037f9be1b0ce96c50fcf23325ad701b974bd76ec3141a309ed38ef0"
+    },
+    {
+      "path": "lib/connector-context.ts",
+      "sha256": "b6ed4b64aa9cc167c32ac4e6b43d6a35a40f5c4bd0a0cda2376edad09a794346"
+    },
+    {
+      "path": "lib/connector-contract.mts",
+      "sha256": "b8324851866ee9b24c2859bde2d1668a1181d02f77638f41c11f69886c87686a"
+    },
+    {
+      "path": "lib/connector-errors.mts",
+      "sha256": "d0f81b7de346e8662b1c64489b16007395db98ee69733c08b2ffa11068967ee6"
+    },
+    {
+      "path": "lib/connector-preview.d.ts",
+      "sha256": "3c8745ae3593f71b02f2d4ade7b445b3c0fcbcd27934cbe4cc820afa24fa2f67"
+    },
+    {
+      "path": "lib/connectors.ts",
+      "sha256": "0e52938a99ec674a94f3d855072fcf4f42563d0a974660ed6adc5c114ee44609"
+    },
+    {
+      "path": "lib/graphics/atlas-data.ts",
+      "sha256": "5b898b21fdeedde3aef46bdb2c4ff9743e2d9bac15160bc14873ab25490aadaa"
+    },
+    {
+      "path": "lib/graphics/biome-settlement-models.ts",
+      "sha256": "131bbb183fc7283df51826387cb38e992b7b3f4bbc4831e3a5655133b5fa5625"
+    },
+    {
+      "path": "lib/graphics/camera-bounds.ts",
+      "sha256": "be4ad787c9598afdeafb19162d43711a735d6af20f99d9678182c9418ff75089"
+    },
+    {
+      "path": "lib/graphics/cinematic.ts",
+      "sha256": "d041ca1eac6d98da45a938962f81ca8a526baac236bd68ecf4c0a8bc8438092a"
+    },
+    {
+      "path": "lib/graphics/continuous-landscape.ts",
+      "sha256": "671bb1078ef49c9f1796768e6441faef2a68619a66d5b016cf008775e710829b"
+    },
+    {
+      "path": "lib/graphics/continuous-layout.ts",
+      "sha256": "904833f08dfcc470a84d1cc7a04542db93d904f7d8a1bee378c798e2a2926ffa"
+    },
+    {
+      "path": "lib/graphics/fishing-community-data.ts",
+      "sha256": "d1d62a4ab905ba9e0a747f76f93992f82704d1abebd9bcb5cfe9018e9b7f23db"
+    },
+    {
+      "path": "lib/graphics/fishing-community-models.ts",
+      "sha256": "a8f8b206da1b919390294155baf0fa5a82744f26a73ee6d2620a2ba9a4ef86d6"
+    },
+    {
+      "path": "lib/graphics/fishing-community.ts",
+      "sha256": "b0a4f53b29b4b50b07d786985135296f8e9d64c8ff61b7c4e840ec98a6dd0a22"
+    },
+    {
+      "path": "lib/graphics/fishing-network-data.ts",
+      "sha256": "2467119d1db3e564900ac7ed0772509e0e468027838350ce77290b893853e131"
+    },
+    {
+      "path": "lib/graphics/fishing-network.ts",
+      "sha256": "c6ad80941dcfb28e911edb43b4062397b89d8ce2ed73feda1c4db9324482702f"
+    },
+    {
+      "path": "lib/graphics/graphics-build.ts",
+      "sha256": "23d2275bad928c7fbc53d8206cbeabca652323fe68790b257dc566deb4d5d793"
+    },
+    {
+      "path": "lib/graphics/habitable-buildings.ts",
+      "sha256": "0b223953aa73fcd5aee14cd201faba5f2c1e854bd765caeb2286ffab501a0dd7"
+    },
+    {
+      "path": "lib/graphics/habitable-commerce.ts",
+      "sha256": "e2fdba7034d59f2382fe42fe13fb3349eda171b0dec5a2f3d5032f1b98d929ed"
+    },
+    {
+      "path": "lib/graphics/habitable-construction.ts",
+      "sha256": "06d0aa3844c4fb7b249979acab3275f63174f5550bd5d1f4d74d274684224185"
+    },
+    {
+      "path": "lib/graphics/habitable-district.ts",
+      "sha256": "7dec7325e6d2b8837938bf8ee2f153b32532a1e6cfc3fe855edfeae2b7d32257"
+    },
+    {
+      "path": "lib/graphics/habitable-house.ts",
+      "sha256": "d198baa0d2d750ab3c5b0f3c048b65727fc7b36fbf09e2c83fdfd3e2a3746f4f"
+    },
+    {
+      "path": "lib/graphics/habitable-industry.ts",
+      "sha256": "4f5bbf0aa19e02ec0af8afbb9ed0b7d2af94e0fee51bd87178a34d478fe0ebf0"
+    },
+    {
+      "path": "lib/graphics/habitable-network.ts",
+      "sha256": "7e626b24014861961f6755f73b8bd3a36a5f620e3953f3ecf573b999c28c872e"
+    },
+    {
+      "path": "lib/graphics/habitable-shed.ts",
+      "sha256": "f9f8cd952322957b5fc3e04418fac708ec289daf73a40f9d186de95ccded74f7"
+    },
+    {
+      "path": "lib/graphics/habitable-worker-models.ts",
+      "sha256": "08f60335e43f069be63009daa46601562eab5a94b9c02c0016eac88ac5615014"
+    },
+    {
+      "path": "lib/graphics/habitable-workers.ts",
+      "sha256": "8da69708979b76a9d6f6f3260567ce15fb3b5b37dbe7381929f197eb09b5c542"
+    },
+    {
+      "path": "lib/graphics/inhabited-world-data.ts",
+      "sha256": "e7444588339950f80fcb8b97058ea88c9782af0cd0f4fe5b2a5d574b98cb7cf8"
+    },
+    {
+      "path": "lib/graphics/inhabited-world.ts",
+      "sha256": "10976e736720ded74b8f16b3755dd2c5ce9947d5be09e8facfa5d72d71319ebb"
+    },
+    {
+      "path": "lib/graphics/item-atlas.ts",
+      "sha256": "d0eca5549e539291590599cc0f8b0aa592f3b068bb94a307ff551bc756da4c13"
+    },
+    {
+      "path": "lib/graphics/land-development.ts",
+      "sha256": "b079cc82dbdbf1ec452b22cc79280d377ce5e3f88588d787c24fbdbe79d108ba"
+    },
+    {
+      "path": "lib/graphics/land-infrastructure-models.ts",
+      "sha256": "61055d01f16dcdde0c7f987329eaca4aa3286c5887fa1c17d28b943666a1ad28"
+    },
+    {
+      "path": "lib/graphics/land-infrastructure.ts",
+      "sha256": "25e4a20dbae62e919f2ee8205aec2d744869c28c300d9fd9d05f9c62dac4c03f"
+    },
+    {
+      "path": "lib/graphics/land-terrain.ts",
+      "sha256": "ca92e42516167a629dd9bf04ba1e9c4d19a2e986a6a9045bf21ea1726830cfc2"
+    },
+    {
+      "path": "lib/graphics/living-actors.ts",
+      "sha256": "ef5efc9aa5c84fd79d1033db2fd5a72438a9bc25698aaf85e0ffb3c55b0b3d6f"
+    },
+    {
+      "path": "lib/graphics/living-zone-data.ts",
+      "sha256": "e0007490034c52216b0a69771e10ca3f3ad1a88d0ae9d9a2642dce5a4d95a0f4"
+    },
+    {
+      "path": "lib/graphics/living-zone.ts",
+      "sha256": "fb8607830e70383fbe2409e9a2556dd692e4772914d5a48ced49e4fbac6bf395"
+    },
+    {
+      "path": "lib/graphics/maritime-water.ts",
+      "sha256": "1ed53b113a6dfdcb3cdd35bbc64c967da91ded8583962d102d3f63cb3079168f"
+    },
+    {
+      "path": "lib/graphics/models.ts",
+      "sha256": "eddb5d94e7c840e58e8a154274354fa8cbdaae40e1d07e0b87dd7768d689c0b8"
+    },
+    {
+      "path": "lib/graphics/palette.ts",
+      "sha256": "0e9bb8f274f7966b625e367ae1b69253f5e30e445f3c29a08ac41e371b4df729"
+    },
+    {
+      "path": "lib/graphics/planet-data.ts",
+      "sha256": "ff3101ccb8c7e15072746defc349262fa42eaded82fd04c6669d398391c264be"
+    },
+    {
+      "path": "lib/graphics/planet-renderer.ts",
+      "sha256": "3f65963f4035941cfdbae6a85098eb59aa694912622240befff9bd306ec2c45c"
+    },
+    {
+      "path": "lib/graphics/planet-surface.ts",
+      "sha256": "8e6b266387b6d2b6a7650709c5e59ba1685e925a6cd957bfe3738b2078007add"
+    },
+    {
+      "path": "lib/graphics/renderer.ts",
+      "sha256": "135905f4fcf0b79bd6193361d26bb877624b1d81492308c5702a7a634c70f6ab"
+    },
+    {
+      "path": "lib/graphics/scene-data.ts",
+      "sha256": "152783f3fd157ebf4f2a370466cbe0328d35e9d565ad77cf519079837877ce7d"
+    },
+    {
+      "path": "lib/graphics/scene-structure.ts",
+      "sha256": "4761b08e5bf7760ed9cf559087cb0fe877c18a0a69dff96a9c06e04ff873bcba"
+    },
+    {
+      "path": "lib/graphics/settlement-layout.ts",
+      "sha256": "6b7115a9965da61c1c3d71ec659bf4e9f3596060d06cb43ecc33e0ca5609873a"
+    },
+    {
+      "path": "lib/graphics/settlement.ts",
+      "sha256": "15176aec5be86f51bb5210a98720fb87341f834499378cb10758ef6599297b97"
+    },
+    {
+      "path": "lib/graphics/trade-routes.ts",
+      "sha256": "5121f5f7a28d380e92f9f9861da138b32b9e01718324c52848077cf6102b6dd5"
+    },
+    {
+      "path": "lib/graphics/viewer-lifecycle.ts",
+      "sha256": "5c273c3199bdb03a49e1a7a42caf5eb5a9ceaa33f595397613ea93a9aca81afd"
+    },
+    {
+      "path": "lib/graphics/world-camera.ts",
+      "sha256": "42040e242303d1e3e0fc6dcd021893384d974b8a91ebbfc6612fe77eb6668a91"
+    },
+    {
+      "path": "lib/graphics/world-geography.ts",
+      "sha256": "5f9770b40c5b4d2669e7230e7369b2ace99731e389e04f3bf81e3208afddb1a2"
+    },
+    {
+      "path": "lib/graphics/world-models.ts",
+      "sha256": "3efeeb61971a20857bfdcd6a0cf46fc542fad0cc29b2e695f8a12d1558eae5ee"
+    },
+    {
+      "path": "lib/graphics/world-navigation.ts",
+      "sha256": "d7f0fe76b1d19f81ae78ae9d188b9f88dfa6995b9421f77420e55f5324e6fb6e"
+    },
+    {
+      "path": "lib/graphics/world-terrain-height.ts",
+      "sha256": "09bd5ab7cd87f37a4492616201fc1e01bf1a3359a60382ae01d3c93490881eb7"
+    },
+    {
+      "path": "lib/graphics/world-terrain-renderer.ts",
+      "sha256": "720749f1def1febef0b2edb2fe53dc1bd42bf557ee8dd17090f43e1c6504c795"
+    },
+    {
+      "path": "lib/mvp/activity-progression.ts",
+      "sha256": "5cbf3b7e79c2d9d6e5232e6c6f80145f610f946efd74b4dfc1a7e595003c759b"
+    },
+    {
+      "path": "lib/mvp/boost-passes.ts",
+      "sha256": "f19165d0efed779db568f13a7a50bf966fbd62e524dc44915a902ec82df5d006"
+    },
+    {
+      "path": "lib/mvp/boost-reservations.ts",
+      "sha256": "cad0d113876fbb5f9db49511b2586475af29c8804af36fae5ab1399066b70c82"
+    },
+    {
+      "path": "lib/mvp/catalog.ts",
+      "sha256": "b4f1c70f13d23f0b44b4940f99eafa503b80681f2220dfbdd03e45c6baa38025"
+    },
+    {
+      "path": "lib/mvp/engine.ts",
+      "sha256": "47cc77174e4e7d22f2bf051599c85f34891ffc06c965e1153accab84eacecc02"
+    },
+    {
+      "path": "lib/mvp/first-trade.ts",
+      "sha256": "eb2a28c4a3292b820645c9c1ebb8a7eba32a5a0a6e2a881b51e4b23301015d45"
+    },
+    {
+      "path": "lib/mvp/habitable-buildings.ts",
+      "sha256": "118e0cbd68ca788fabc514cebaf7e9ca81017d1cfbe51dd750c7edb93d7cf314"
+    },
+    {
+      "path": "lib/mvp/habitable-commerce.ts",
+      "sha256": "8e8239dee23168388fcf7ed47bd9d92832ec2a03a0b4cd98c83bb9630ce486da"
+    },
+    {
+      "path": "lib/mvp/habitable-construction.ts",
+      "sha256": "b502399bd6e3b468fa13c19bd4156f06c5288e411ab1a4f55b4b7340d4087f65"
+    },
+    {
+      "path": "lib/mvp/habitable-daily.ts",
+      "sha256": "9d26f437d059055eb0fa3b5735fcb48fd13fe36f69af5e96352b1ef9736e7785"
+    },
+    {
+      "path": "lib/mvp/habitable-data.ts",
+      "sha256": "ff9fb3e9e14ad65a08a0e0be9b70a3b4ea24f874988affc03d1652de81a5716e"
+    },
+    {
+      "path": "lib/mvp/habitable-industry.ts",
+      "sha256": "5171e1ad2a1e37b8fc5134f57afdd0c469ed5d117cacab571a65b6b630343673"
+    },
+    {
+      "path": "lib/mvp/habitable-logistics.ts",
+      "sha256": "bdc4cd7b9d842517c9d9d174ac86e54e63a506dc2e64a4489ab4b41f36fc305e"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-balance.ts",
+      "sha256": "b0aa3b87963ef07adfc7d8203cf840bfe56737996a9be6e7978adfa58ea315d7"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-forecast.ts",
+      "sha256": "af5ba8de53afd8df767c1f4cf32b9fe072cbf66e3b964470d8a3dd60a121f097"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-operator.ts",
+      "sha256": "12113094a7c890f3226902d3f0460870fcbdf64053a68f65191139f50d8f9cdb"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-priorities.ts",
+      "sha256": "4d6a8b485657a7591d1a7ff17055853e79b9a1c5f866690c9e287c9e4e52ba60"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-reservations.ts",
+      "sha256": "a428e13246b173e274415f26d13e4bd43a2924d3c318d3fc1d76bb1b97659682"
+    },
+    {
+      "path": "lib/mvp/habitable-manager-transport.ts",
+      "sha256": "940064e8fef7926ad38681253a46bbc2104ded4cb5abe74567095128a7e5f839"
+    },
+    {
+      "path": "lib/mvp/habitable-manager.ts",
+      "sha256": "492dc9caa3ffbd495f5a238ee0ce177f70ab4fad4ae14caee0f9d78237590f34"
+    },
+    {
+      "path": "lib/mvp/habitable-network.ts",
+      "sha256": "7ff5aa64455748e63edc50f859c4f3f21c69db9297ceb51ed0f6a870c9a5399e"
+    },
+    {
+      "path": "lib/mvp/habitable-residents.ts",
+      "sha256": "570988f3d182e887e1fb9d09666460d357439c78902fbbd54a1ae1e21ef5b130"
+    },
+    {
+      "path": "lib/mvp/habitable-shed-upgrades.ts",
+      "sha256": "f7c7f5143fd8d6fc092ca7288dcab64f10ea1e58c1aa93d287aa272a6b428049"
+    },
+    {
+      "path": "lib/mvp/habitable-supplies.ts",
+      "sha256": "7f4b249c409ba172ae0e5bb808b1742af7aafa3aa61a4e9a656ad7252939f88e"
+    },
+    {
+      "path": "lib/mvp/habitable.ts",
+      "sha256": "ba86c88c1eabf884a29ee23d8080b38b5b133106c7acb832c7be5bc6ae036267"
+    },
+    {
+      "path": "lib/mvp/helpers.ts",
+      "sha256": "36588f5ef9ddb8f52e4d99f501a50f4f6dc008e62186d7e45d21fcea3be13235"
+    },
+    {
+      "path": "lib/mvp/http.ts",
+      "sha256": "9c2e95d3dd51b42276648a41ab507b90b12b4bf70fe803e90d64795403131c02"
+    },
+    {
+      "path": "lib/mvp/invitations.ts",
+      "sha256": "63b1ddbfcc338d72c058eb47b5d35e887c8a884261cd034856c35b9fe9a53c57"
+    },
+    {
+      "path": "lib/mvp/land-civil.ts",
+      "sha256": "eac277fa16f12db0118bb3575abfa49f9ba145431b519d832602a2da1f2a7672"
+    },
+    {
+      "path": "lib/mvp/land-crews.ts",
+      "sha256": "d5f4dd3d5e78e3cad57fc17bdb5c5ca5093a6704c1c5a61043a72bda3bc4e963"
+    },
+    {
+      "path": "lib/mvp/land-expansion.ts",
+      "sha256": "eeb42d45fffab49f8ee458d16e0013001193b56bf215c59d88ee321a5f23c51f"
+    },
+    {
+      "path": "lib/mvp/land-grid.ts",
+      "sha256": "249aa6c3c5f16409d67441a0cf9e4f97ef09708748b491205101df5c12d4e756"
+    },
+    {
+      "path": "lib/mvp/land-paths.ts",
+      "sha256": "2f0f05e0776d5fbd75793e62d85971f6caa179418c2bb72fc6fe30d723a3aad1"
+    },
+    {
+      "path": "lib/mvp/level-unlocks.ts",
+      "sha256": "a6e0017793ecc01631d02786b22d5688dd52a5be3a411537bdee11a825d54ec9"
+    },
+    {
+      "path": "lib/mvp/player-progress.ts",
+      "sha256": "5e93f1d5f2b78318afeceed81f6fd8c5064fc2c0c539faf0827d795ed5449803"
+    },
+    {
+      "path": "lib/mvp/production.ts",
+      "sha256": "c696fbfe046f394c6b3cd2db61e03e7ff2e1ec4a0a9e5c11986d72d6fb33dd85"
+    },
+    {
+      "path": "lib/mvp/reference-config.json",
+      "sha256": "9b6d11eddac48aeb4cc526470324599e57648600cbeb5efcdac626a3f4d2ae52"
+    },
+    {
+      "path": "lib/mvp/settlements.ts",
+      "sha256": "a11e9cb52872dcba4c58beb16b30a2d80dfc8cddfe6e4d0c80167579927e4f54"
+    },
+    {
+      "path": "lib/mvp/social.ts",
+      "sha256": "73a33ff88bb2983af9983fdbac2b9ad6f9dcbb13904e51401e7b3c75ffc1ad80"
+    },
+    {
+      "path": "lib/mvp/station-upgrades.ts",
+      "sha256": "c7b4f57701f18d993ee66b0857cb4c37fc48b7f79f81a507362ba3d057983479"
+    },
+    {
+      "path": "lib/mvp/storage-availability.ts",
+      "sha256": "5bc1195baf44aea9f298d0d8833059d14d48e5368459d8313605fbdae3817f95"
+    },
+    {
+      "path": "lib/mvp/store.ts",
+      "sha256": "ab3d4938f5f93fd7717e9db9df6717968184fa61c019152f2d336ae50691959b"
+    },
+    {
+      "path": "lib/mvp/territory.ts",
+      "sha256": "c423e96f1fa83e55710b20ecc0d074798dd6c39780c9a5f467184f322eb33b9a"
+    },
+    {
+      "path": "lib/mvp/test-boosts.ts",
+      "sha256": "003c89cf164dfddfa308d9d76babf7f091204052e24996ed2a1a8cfa5f564a00"
+    },
+    {
+      "path": "lib/mvp/types.ts",
+      "sha256": "10574292c7472d646e7e9e6490f4cfe499b6a4250925925d748d3d9b2a97e75c"
+    },
+    {
+      "path": "lib/mvp/view.ts",
+      "sha256": "dc5f057cad17ba2a61d8848f4d24a13d35c5fb35e18640b9709f49a5ba65ca0e"
+    },
+    {
+      "path": "lib/mvp/world.ts",
+      "sha256": "067b7d5f7131c34b4991a4c3bd1339af7568a7d865dfe552ff49d5bf1aac4673"
+    },
+    {
+      "path": "lib/utils.ts",
+      "sha256": "c2aa0cde88a8b5b5db7718003da1a345bdcce5f31085800b66ff0dddedfb0254"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-19T16:59:11.422Z",
+  "files": [
+    {
+      "file": "step-grass-0.mp3",
+      "bytes": 6956,
+      "sha256": "e327ab19f11fe33263cba875f186782aad3d5d1d6d41a25bf9ceefb30ec18efe"
+    },
+    {
+      "file": "step-grass-1.mp3",
+      "bytes": 6092,
+      "sha256": "41e71c45829ec6976cf035752a015284abfda9068715490deda98fa25718bf00"
+    },
+    {
+      "file": "step-grass-2.mp3",
+      "bytes": 6380,
+      "sha256": "a68019bea9d5b545a5581802050daffb1c1023fbb82bf626a3f48048c8f298f5"
+    },
+    {
+      "file": "step-stone-0.mp3",
+      "bytes": 1484,
+      "sha256": "6e9489561293437d9b9951a459b01d2ca5042f3bce2240c2cbe4a3fc8d64ee07"
+    },
+    {
+      "file": "step-stone-1.mp3",
+      "bytes": 1484,
+      "sha256": "2e69974ffc1eaec67432462ca6e60e50976bf311072ee694d4b3534f85348b7f"
+    },
+    {
+      "file": "step-stone-2.mp3",
+      "bytes": 1772,
+      "sha256": "7fa00f7a8e0838fb76905a8869b265f632715a1fbdf8d97c96233ef2fc8af190"
+    },
+    {
+      "file": "step-wood-0.mp3",
+      "bytes": 2924,
+      "sha256": "ca0a17c95b231a285e8beee31d874e9cd24355a0ca7d69831d7f8d7ecf095261"
+    },
+    {
+      "file": "step-wood-1.mp3",
+      "bytes": 2636,
+      "sha256": "871f3d468a738bcb7693d718938b2525a37e0c73d3c0173d1cd7f919db163978"
+    },
+    {
+      "file": "step-wood-2.mp3",
+      "bytes": 2636,
+      "sha256": "98e16c00c674fa4ac4c50a007e0db84666316d5b2a6bef9a6f8bcbfc2fc1869b"
+    },
+    {
+      "file": "step-snow-0.mp3",
+      "bytes": 3788,
+      "sha256": "7547411f33d8122ddcb787d6072dea596cd216dd078dce430b8eeaeabd80942e"
+    },
+    {
+      "file": "step-snow-1.mp3",
+      "bytes": 3788,
+      "sha256": "9d96ca5b423e03d9c225aa3025a536378c4541e5f73bf8034faf7d95ee8f77f8"
+    },
+    {
+      "file": "step-snow-2.mp3",
+      "bytes": 3788,
+      "sha256": "535764c3d323772bca5e5acc7a38aa0779f236f30b1ad9c1afc2d3bc508d9087"
+    },
+    {
+      "file": "step-carpet-0.mp3",
+      "bytes": 2060,
+      "sha256": "9d261f7fce76b84851d407a1e974e1a08fcd329787662f16e0f2d112b8011da8"
+    },
+    {
+      "file": "step-carpet-1.mp3",
+      "bytes": 1772,
+      "sha256": "729964c534e1ff2cd4609b8d8f041ffb9463e74845a4282931882b220d801e24"
+    },
+    {
+      "file": "step-carpet-2.mp3",
+      "bytes": 1772,
+      "sha256": "729964c534e1ff2cd4609b8d8f041ffb9463e74845a4282931882b220d801e24"
+    },
+    {
+      "file": "axe.mp3",
+      "bytes": 2636,
+      "sha256": "ea54fe7182e70ab65c20a68b2c8148975553ba779bb77b8d4a72c7998b5eb813"
+    },
+    {
+      "file": "hammer.mp3",
+      "bytes": 3500,
+      "sha256": "604f65e4aa73f1f62c54bdf65ced07cb9e432772ad6eafac97dbfc7480d01479"
+    },
+    {
+      "file": "harvest.mp3",
+      "bytes": 6092,
+      "sha256": "0dee460a62aec1f33ccdd9125d7ca9ce1458cefeaf8d621cedf42f81f65ff515"
+    },
+    {
+      "file": "crate.mp3",
+      "bytes": 6956,
+      "sha256": "85faab9e34b691ee625e52637d5b45267816ee317c2d8798f6e04f8f163031e4"
+    },
+    {
+      "file": "creak.mp3",
+      "bytes": 6092,
+      "sha256": "4a8865739884f2f4c5c2ee671dfb01ff7437ccb5283962d5624b655e96ed53e6"
+    },
+    {
+      "file": "coins.mp3",
+      "bytes": 7532,
+      "sha256": "b5ef776de578ef4c89a42f2f5a74abd84375a8912bebd30e47b85fd71920fc89"
+    },
+    {
+      "file": "hoof.mp3",
+      "bytes": 3500,
+      "sha256": "fcdd9edbbafcae0c5c6c0c9f2e5485f70d7445246c0dbfa803c663728c25bd16"
+    },
+    {
+      "file": "splash.mp3",
+      "bytes": 12716,
+      "sha256": "699b1532dd1a02ca1363cf4642cd529751418397f9c7412bdc46f9ed45eaf765"
+    },
+    {
+      "file": "water.mp3",
+      "bytes": 32876,
+      "sha256": "5a73a3e94cd7f0c1c74389bd081f38468d9567ac0d38679a1f912e68bf8b9733"
+    },
+    {
+      "file": "forest.mp3",
+      "bytes": 160841,
+      "sha256": "9e0b8a7f227eaa8223cfb896360a4b7b334df059c11c3bf15dcbc5f99bb38098"
+    },
+    {
+      "file": "exploration.mp3",
+      "bytes": 2837420,
+      "sha256": "38ee7eb27504987326fcf4f99876c7c07655216ac26b17e08f1ad2ad5fdaf7a6"
+    },
+    {
+      "file": "saw.mp3",
+      "bytes": 19916,
+      "sha256": "c5be6ab1312ed48f2c78fae6fb94305c7142e9f3e1d6d21c109c1a4bae6fc9c4"
+    },
+    {
+      "file": "shop-welcome.mp3",
+      "bytes": 87308,
+      "sha256": "db53f7f83e1abd9748d795694e2ef41af2db0c39c0e3ee7c6a928fb6a5bcc820",
+      "source": "Original QFrontier dialogue, synthesized locally with installed Microsoft Raul es-MX voice; no remote speech service."
+    },
+    {
+      "file": "shop-thanks.mp3",
+      "bytes": 65996,
+      "sha256": "8decc3a7528e083f35cb69902bb074c8180ff778910064de38bdfae2f8c24a0c",
+      "source": "Original QFrontier dialogue, synthesized locally with installed Microsoft Raul es-MX voice; no remote speech service."
+    },
+    {
+      "file": "shop-north-welcome.mp3",
+      "bytes": 124988,
+      "sha256": "0fe990dac89a6b4670e5451b184ba8b3389e0b813f6e8e6806cd0c2ec8f5df9a",
+      "source": "Original QFrontier dialogue synthesized locally using installed Microsoft Sabina es-MX; no remote speech service."
+    }
+  ],
+  "totalBytes": 3427701
+}

@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';
+import {test} from 'node:test';
+import {createHash} from 'node:crypto';
+import {compareExplorationCheckpoints} from '../scripts/private-pc-exploration-checkpoint.mjs';
+const expected={x:14.868110992582297,y:1.2649084248202964},ref=createHash('sha256').update('selected-profile').digest('hex').slice(0,12);
+function fixture(){return{players:{'selected-profile':{habitable:{position:{...expected}}},other:{habitable:{position:{x:8,y:4.5}}}}};}
+test('the final checkpoint requires exact original floats and no optional exploration or pending local movement',()=>{const before=fixture(),after=structuredClone(before);assert.equal(compareExplorationCheckpoints(before,after,ref,expected).allPassed,true);after.players['selected-profile'].habitable.position.x=14.868111;assert.equal(compareExplorationCheckpoints(before,after,ref,expected).allPassed,false);after.players['selected-profile'].habitable.position={...expected};Object.assign(after.players['selected-profile'].habitable,{exploration:{position:{x:-408,y:-312}}});const outside=compareExplorationCheckpoints(before,after,ref,expected);assert.equal(outside.allPassed,false);assert.equal(outside.checks.finalExplorationAbsent,false);});
+test('another profile navigation cannot be hidden by the general QA walking allowance',()=>{const before=fixture(),after=structuredClone(before);after.players.other.habitable.position.y=4.6;const result=compareExplorationCheckpoints(before,after,ref,expected);assert.equal(result.checks.finalMatchesOriginalCheckpoint,true);assert.equal(result.checks.otherProfilesNavigationExact,false);assert.equal(result.allPassed,false);});

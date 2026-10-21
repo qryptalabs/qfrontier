@@ -1,0 +1,472 @@
+{
+  "version": "1.0-proposal",
+  "status": "reference_parameters_not_live",
+  "language": "es",
+  "world": {
+    "rows": 9,
+    "cols": 9,
+    "season_days": 28,
+    "biomes": [
+      "forest",
+      "plains",
+      "desert",
+      "mountain",
+      "swamp"
+    ],
+    "terrains": [
+      "firm",
+      "rocky",
+      "sandy",
+      "muddy",
+      "slope",
+      "water"
+    ],
+    "deposit_layers": [
+      500,
+      250,
+      100
+    ],
+    "reservation_cap": 25,
+    "promoter_quota_bps": 2500
+  },
+  "items": {
+    "raw": [
+      "iron_ore",
+      "copper_ore",
+      "silica",
+      "timber",
+      "stone",
+      "fiber",
+      "water",
+      "grain",
+      "herbs",
+      "biomass",
+      "crystal_shard",
+      "data_fragment"
+    ],
+    "intermediate": [
+      "iron_ingot",
+      "copper_wire",
+      "alloy",
+      "cloth",
+      "nutrient",
+      "seed",
+      "glass",
+      "plank"
+    ],
+    "products": [
+      "ration",
+      "bread",
+      "preserved_food",
+      "medkit",
+      "repair_kit",
+      "drill_module_i",
+      "drill_module_ii",
+      "pickaxe",
+      "scanner",
+      "cart",
+      "weather_cloak",
+      "camp_kit",
+      "guard_armor",
+      "spear",
+      "arrow_bundle",
+      "bridge_kit"
+    ],
+    "rare": [
+      "memory_core",
+      "ancient_map",
+      "artifact_frame",
+      "season_relic"
+    ]
+  },
+  "recipes": [
+    {
+      "id": "iron_ingot",
+      "inputs": {
+        "iron_ore": 3
+      },
+      "output": "iron_ingot",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "copper_wire",
+      "inputs": {
+        "copper_ore": 2
+      },
+      "output": "copper_wire",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "alloy",
+      "inputs": {
+        "iron_ingot": 2,
+        "copper_wire": 1
+      },
+      "output": "alloy",
+      "quantity": 1,
+      "seconds": 900,
+      "building": "workshop"
+    },
+    {
+      "id": "cloth",
+      "inputs": {
+        "fiber": 3
+      },
+      "output": "cloth",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "workshop"
+    },
+    {
+      "id": "nutrient",
+      "inputs": {
+        "biomass": 3,
+        "water": 1
+      },
+      "output": "nutrient",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "workshop"
+    },
+    {
+      "id": "seed",
+      "inputs": {
+        "grain": 1
+      },
+      "output": "seed",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "workshop"
+    },
+    {
+      "id": "glass",
+      "inputs": {
+        "silica": 3
+      },
+      "output": "glass",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "plank",
+      "inputs": {
+        "timber": 2
+      },
+      "output": "plank",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "workshop"
+    },
+    {
+      "id": "ration",
+      "inputs": {
+        "grain": 2,
+        "water": 1
+      },
+      "output": "ration",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "kitchen"
+    },
+    {
+      "id": "bread",
+      "inputs": {
+        "grain": 2,
+        "water": 1
+      },
+      "output": "bread",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "kitchen"
+    },
+    {
+      "id": "preserved_food",
+      "inputs": {
+        "ration": 1,
+        "herbs": 1
+      },
+      "output": "preserved_food",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "kitchen"
+    },
+    {
+      "id": "medkit",
+      "inputs": {
+        "herbs": 2,
+        "cloth": 1,
+        "water": 1
+      },
+      "output": "medkit",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "repair_kit",
+      "inputs": {
+        "alloy": 1,
+        "plank": 1
+      },
+      "output": "repair_kit",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "drill_module_i",
+      "inputs": {
+        "alloy": 3,
+        "copper_wire": 2,
+        "glass": 1
+      },
+      "output": "drill_module_i",
+      "quantity": 1,
+      "seconds": 1800,
+      "building": "workshop"
+    },
+    {
+      "id": "drill_module_ii",
+      "inputs": {
+        "alloy": 5,
+        "crystal_shard": 2,
+        "repair_kit": 1
+      },
+      "output": "drill_module_ii",
+      "quantity": 1,
+      "seconds": 2400,
+      "building": "workshop"
+    },
+    {
+      "id": "pickaxe",
+      "inputs": {
+        "iron_ingot": 2,
+        "plank": 1
+      },
+      "output": "pickaxe",
+      "quantity": 1,
+      "seconds": 900,
+      "building": "workshop"
+    },
+    {
+      "id": "scanner",
+      "inputs": {
+        "alloy": 1,
+        "copper_wire": 2,
+        "data_fragment": 2
+      },
+      "output": "scanner",
+      "quantity": 1,
+      "seconds": 1200,
+      "building": "workshop"
+    },
+    {
+      "id": "cart",
+      "inputs": {
+        "plank": 3,
+        "iron_ingot": 1,
+        "cloth": 1
+      },
+      "output": "cart",
+      "quantity": 1,
+      "seconds": 1200,
+      "building": "workshop"
+    },
+    {
+      "id": "weather_cloak",
+      "inputs": {
+        "cloth": 2,
+        "herbs": 1
+      },
+      "output": "weather_cloak",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "camp_kit",
+      "inputs": {
+        "plank": 2,
+        "cloth": 2
+      },
+      "output": "camp_kit",
+      "quantity": 1,
+      "seconds": 900,
+      "building": "workshop"
+    },
+    {
+      "id": "guard_armor",
+      "inputs": {
+        "alloy": 2,
+        "cloth": 1
+      },
+      "output": "guard_armor",
+      "quantity": 1,
+      "seconds": 1200,
+      "building": "workshop"
+    },
+    {
+      "id": "spear",
+      "inputs": {
+        "iron_ingot": 1,
+        "plank": 1
+      },
+      "output": "spear",
+      "quantity": 1,
+      "seconds": 600,
+      "building": "workshop"
+    },
+    {
+      "id": "arrow_bundle",
+      "inputs": {
+        "timber": 1,
+        "iron_ore": 1
+      },
+      "output": "arrow_bundle",
+      "quantity": 1,
+      "seconds": 300,
+      "building": "workshop"
+    },
+    {
+      "id": "bridge_kit",
+      "inputs": {
+        "plank": 4,
+        "iron_ingot": 2,
+        "stone": 2
+      },
+      "output": "bridge_kit",
+      "quantity": 1,
+      "seconds": 1800,
+      "building": "workshop"
+    }
+  ],
+  "factions": {
+    "cartographers": {
+      "survey_time_bps": 9000
+    },
+    "forgers": {
+      "craft_time_bps": 9000
+    },
+    "custodians": {
+      "defensive_wear_bps": 9000
+    }
+  },
+  "terrain_duration": {
+    "firm": "1.0",
+    "rocky": "1.10",
+    "sandy": "1.20",
+    "muddy": "1.30",
+    "slope": "1.25",
+    "water": "1.50"
+  },
+  "weather": {
+    "clear": {
+      "duration": "1.0",
+      "water": "1.0"
+    },
+    "rain": {
+      "duration": "1.20",
+      "water": "1.0"
+    },
+    "heat": {
+      "duration": "1.0",
+      "water": "1.25"
+    },
+    "storm": {
+      "duration": "1.40",
+      "water": "1.0"
+    }
+  },
+  "farming": {
+    "cycles_per_plot": 10,
+    "inputs": {
+      "seed": 1,
+      "water": 2,
+      "nutrient": 1
+    },
+    "outputs": {
+      "grain": 3,
+      "biomass": 1
+    },
+    "cycles_regional_reference": 100
+  },
+  "economy": {
+    "credit_market_fee_bps": 200,
+    "salvage_bps": 6000,
+    "transferable_starter": false,
+    "npc_budget_required": true
+  },
+  "organizations": {
+    "clan_member_cap": 20,
+    "alliance_clan_cap": 3,
+    "clan_outpost_cap": 1,
+    "alliance_outpost_cap": 2
+  },
+  "combat": {
+    "unit_types": [
+      "scout",
+      "guard",
+      "ranged",
+      "engineer"
+    ],
+    "owned_units_cap": 12,
+    "field_slots": 6,
+    "loot_bps": 2000,
+    "protection_hours": 24,
+    "rations_per_deployed_unit": 2
+  },
+  "rewards": {
+    "multiplier_cap_bps": 18000,
+    "consistency_max_bps": 3000,
+    "quality_max_bps": 4000,
+    "referral_max_bps": 1000,
+    "individual_fund_cap_bps": 200
+  },
+  "referrals": {
+    "valid_days": 3,
+    "window_days": 7,
+    "cap_per_season": 5,
+    "levels": 1,
+    "tutorial": true,
+    "second_region": true,
+    "crafted": true
+  },
+  "exploration": {
+    "weights": {
+      "common": 65,
+      "data": 20,
+      "blueprint": 5,
+      "rare": 1,
+      "empty": 9
+    },
+    "paid_attempts": false,
+    "rare_budget_required": true
+  },
+  "qrypta": {
+    "chain_id": 56,
+    "token_address": "0x5266fe1aD9B035d0ED6142f1A70e9D6F102c8153",
+    "decimals": 18,
+    "live_enabled": false,
+    "escrow_contract": null,
+    "transfer_fee_bps": null,
+    "project_example": {
+      "net_target_atoms": "500000000000000000000",
+      "net_lot_atoms": "100000000000000000000",
+      "lots": 5,
+      "goods_per_lot": 5,
+      "item": "preserved_food"
+    },
+    "policy": "Receive actual net amounts. Do not enable live payments until contract behavior and payment flow are reviewed."
+  },
+  "sources": {
+    "token": "https://providentquantum.tech/docs/",
+    "telegram_crypto": "https://core.telegram.org/bots/blockchain-guidelines",
+    "telegram_payments": "https://core.telegram.org/bots/payments-stars"
+  },
+  "balance_limits": "These values are design hypotheses; no player retention or market-price claim is implied."
+}

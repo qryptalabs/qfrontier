@@ -1,0 +1,9 @@
+import {sampleWorld,type WorldLandmark} from './world-geography.ts';
+import {CAVE_MODEL_BOXES,stoneRockModelBoxes} from './landmark-model-data.ts';
+import type {PhysicalObstacle} from './kinematic-physics.ts';
+
+export interface LandmarkPlacement{id:string;kind:'cave'|'rock';x:number;y:number;scaleX:number;scaleY:number;scaleZ:number;rotation:number;seed:number}
+/** Existing scenery placements, with the same water filters, rotations and model variants. */
+export function landmarkPlacements(place:WorldLandmark):readonly LandmarkPlacement[]{if(place.kind==='village'||place.kind==='city')return[];if(place.kind==='cave')return[{id:place.id,kind:'cave',x:place.x,y:place.y,scaleX:1.4,scaleY:1.4,scaleZ:1.4,rotation:0,seed:0}];if(sampleWorld(place.x,place.y).water)return[];const parts:LandmarkPlacement[]=[];for(let i=0;i<5;i++){const angle=i*2.4,x=place.x+Math.cos(angle)*(2+i*.65),y=place.y+Math.sin(angle)*(2+i*.65);if(sampleWorld(x,y).water)continue;parts.push({id:`${place.id}:rock:${i}`,kind:'rock',x,y,scaleX:place.biome==='mountain'?2.2:1.8,scaleY:place.biome==='mountain'?4.5+i*.35:1.9,scaleZ:2,rotation:angle,seed:i%3});}return parts;}
+/** Open entrances stay open: only the actual low solid parts, never an enclosing cave AABB. */
+export function landmarkObstacles(place:WorldLandmark):readonly PhysicalObstacle[]{return landmarkPlacements(place).flatMap(part=>{const c=Math.cos(part.rotation),s=Math.sin(part.rotation);return(part.kind==='cave'?CAVE_MODEL_BOXES:stoneRockModelBoxes(part.seed)).filter(box=>box.solid&&(box.y-box.height/2)*part.scaleY<1.6).map(box=>({id:`landmark-solid:${part.id}:${box.id}`,x:part.x+box.x*part.scaleX*c+box.z*part.scaleZ*s,y:part.y-box.x*part.scaleX*s+box.z*part.scaleZ*c,width:box.width*part.scaleX,depth:box.depth*part.scaleZ,height:(box.y+box.height/2)*part.scaleY,rotation:part.rotation,kind:part.kind==='cave'?'cave-wall':'rock'}));});}
